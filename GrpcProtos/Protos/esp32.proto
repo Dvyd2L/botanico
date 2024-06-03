@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcProtos.Protos";
+
+package esp32;
+
+service Esp32 {
+  rpc ToggleLed (ChangeStatusLedRequest) returns (ChangeStatusLedReply);
+  rpc TurnOffLed (ChangeStatusLedRequest) returns (ChangeStatusLedReply);
+  rpc TurnOnLed (ChangeStatusLedRequest) returns (ChangeStatusLedReply);
+}
+
+message ChangeStatusLedRequest { 
+  bool status = 1;
+}
+
+message ChangeStatusLedReply {
+  bool status = 1;
+}

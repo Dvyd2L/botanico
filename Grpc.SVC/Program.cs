@@ -1,11 +1,13 @@
-using Grpc.SVC.Services;
+using Botanico.Grpc.Helpers;
+using Botanico.Grpc.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
+builder.Services.AddSingleton<IMqttHelper, MqttHelper>();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<GreeterService>();
