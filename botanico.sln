@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Botanico.Api", "botanico.api\Botanico.Api.csproj", "{9768F3D4-7A07-4D70-8CAC-54148FB12EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Botanico.Api", "Botanico.Api\Botanico.Api.csproj", "{9768F3D4-7A07-4D70-8CAC-54148FB12EE0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Botanico.Grpc", "Grpc.SVC\Botanico.Grpc.csproj", "{F0C3B534-5BB8-4C41-A626-9912A57D3802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Botanico.Grpc", "Botanico.Grpc\Botanico.Grpc.csproj", "{F0C3B534-5BB8-4C41-A626-9912A57D3802}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcProtos", "GrpcProtos\GrpcProtos.csproj", "{1A5CEB5F-7E78-4252-94A3-C190B726297A}"
 EndProject
